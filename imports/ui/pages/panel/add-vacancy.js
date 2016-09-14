@@ -39,10 +39,13 @@ Template.newVacancy.events({
       if (error) {
         Meteor.call('displayErrors', error);
       }
+<<<<<<< 218cf80d1e823c4a06954ce9929bf89a47f8399d
       else {
         toastr.success('Nova oportunidade cadastrada com sucesso', 'Vaga Registrada!');
         resetForm();
       }
+=======
+>>>>>>> Add functionality to create vacancies
     });
   }
 });
@@ -51,12 +54,15 @@ function targetValue(target) {
   return target.value != "" ? target.value : undefined;
 }
 
+<<<<<<< 218cf80d1e823c4a06954ce9929bf89a47f8399d
 function resetForm() {
   $("form")[0].reset();
   $('select option:selected').removeAttr('selected');
   $('select').trigger('chosen:updated');
 }
 
+=======
+>>>>>>> Add functionality to create vacancies
 Template.newVacancy.helpers({
   skills: function() {
     return Template.instance().skills.get();
