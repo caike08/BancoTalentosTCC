@@ -49,7 +49,7 @@ Template.newVacancy.events({
 >>>>>>> Add functionality to create vacancies
 =======
       else {
-        toastr.success('Nova oportunidade cadastrada com sucesso', 'Vaga Regitrada!');
+        toastr.success('Nova oportunidade cadastrada com sucesso', 'Vaga Registrada!');
         resetForm();
       }
 >>>>>>> Add simple vacancies listing to student profile
