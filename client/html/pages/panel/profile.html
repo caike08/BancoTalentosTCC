@@ -1,7 +1,13 @@
 <template name="profile">
   <section class="full-bleed">
     <div class="section-body style-default-dark force-padding text-shadow">
-      <div class="img-backdrop" style="background-image: url('img/profile-bg.jpg')"></div>
+      {{#if isInRole 'student' 'default-group'}}
+        <div class="img-backdrop" style="background-image: url('img/student-profile-bg.jpg.jpg')"></div>
+      {{/if}}
+
+      {{#if isInRole 'company' 'default-group'}}
+        <div class="img-backdrop" style="background-image: url('img/company-profile-bg.jpg')"></div>
+      {{/if}}
       <div class="overlay overlay-shade-top stick-top-left height-3"></div>
       <div class="row">
         <div class="col-md-3 col-xs-5">
