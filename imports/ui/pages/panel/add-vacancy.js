@@ -39,6 +39,7 @@ Template.newVacancy.events({
       if (error) {
         Meteor.call('displayErrors', error);
       }
+<<<<<<< 9c9f4d32276565e680d33770c5ee004fbaf662e8
 <<<<<<< 218cf80d1e823c4a06954ce9929bf89a47f8399d
       else {
         toastr.success('Nova oportunidade cadastrada com sucesso', 'Vaga Registrada!');
@@ -46,6 +47,12 @@ Template.newVacancy.events({
       }
 =======
 >>>>>>> Add functionality to create vacancies
+=======
+      else {
+        toastr.success('Nova oportunidade cadastrada com sucesso', 'Vaga Regitrada!');
+        resetForm();
+      }
+>>>>>>> Add simple vacancies listing to student profile
     });
   }
 });
@@ -54,15 +61,21 @@ function targetValue(target) {
   return target.value != "" ? target.value : undefined;
 }
 
+<<<<<<< 9c9f4d32276565e680d33770c5ee004fbaf662e8
 <<<<<<< 218cf80d1e823c4a06954ce9929bf89a47f8399d
+=======
+>>>>>>> Add simple vacancies listing to student profile
 function resetForm() {
   $("form")[0].reset();
   $('select option:selected').removeAttr('selected');
   $('select').trigger('chosen:updated');
 }
 
+<<<<<<< 9c9f4d32276565e680d33770c5ee004fbaf662e8
 =======
 >>>>>>> Add functionality to create vacancies
+=======
+>>>>>>> Add simple vacancies listing to student profile
 Template.newVacancy.helpers({
   skills: function() {
     return Template.instance().skills.get();
